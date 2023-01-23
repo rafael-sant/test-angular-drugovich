@@ -1,0 +1,150 @@
+.client-listing {
+  max-width: 1034px;
+  margin: 0 auto;
+  margin-top: 70px;
+
+}
+
+.client-listing__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 0 10px;
+
+}
+
+.client-listing__content p {
+  font-family: 'Monda', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 44px;
+  margin: 0 0 0 10px;
+}
+
+.client-listing__content--name-section {
+  display: flex;
+  align-items: center;
+}
+
+.client-listing__content--button-section a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: 91px;
+  text-transform: uppercase;
+  font-family: 'Monda', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  border-radius: 5px;
+  background: #4486EA;
+  transition: .3s ease-in;
+}
+
+.client-listing__content--button-section a:hover {
+  background: #3975d0;
+
+}
+
+.client-listing__clients__all {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 45px;
+}
+
+.client-listing__clients__all li {
+  list-style-type: none;
+  background-color: #FFFFFF;
+  margin-bottom: 7px;
+  padding: 14px 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-listing__clients__all li span {
+  width: 25%;
+}
+
+.client-listing__clients__all li .client-listing__clients__name {
+  font-size: 18px;
+}
+
+.client-listing__clients__all li .client-listing__clients__cnjp {
+  font-size: 12px;
+}
+
+.client-listing__clients__all li .client-listing__clients__status_inativo,
+.client-listing__clients__all li .client-listing__clients__status_ativo {
+  font-size: 14px;
+  display: flex;
+  position: relative;
+  font-family: 'Monda';
+
+}
+
+.client-listing__clients__all li .client-listing__clients__status_inativo::before,
+.client-listing__clients__all li .client-listing__clients__status_ativo::before {
+  width: 14px;
+  display: block;
+  content: "";
+  height: 14px;
+  left: -20px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.client-listing__clients__all li .client-listing__clients__status_inativo::before {
+  background-color: #EC2424;
+
+}
+
+.client-listing__clients__all li .client-listing__clients__status_ativo::before {
+  background-color: #2ACC30;
+}
+
+.client-listing__clients__all li button {
+  width: 91px;
+  height: 34px;
+  border: none;
+  text-transform: uppercase;
+  background: #E18F53;
+  color: #fff;
+  font-family: 'Monda', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+@media (max-width: 640px) {
+  .client-listing__clients__all li {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .client-listing__clients__all li span {
+    width: unset;
+    padding: 8px 0;
+  }
+
+
+  .client-listing__clients__all li .client-listing__clients__status_inativo,
+  .client-listing__clients__all li .client-listing__clients__status_ativo {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 475px) {
+  .client-listing__content p {
+    font-size: 20px;
+  }
+
+}

@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## A api funciona em um servidor local, para conseguir rodar, seguir o passo a passo à baixo
+
+## npm install -g json-server
+
+## json-server --watch db.json na pasta dados para rodar a api e após isso, rodar o projeto normalmente.
